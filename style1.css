@@ -1,6 +1,5 @@
 body
 {
-
 width: 750px;
 margin-left: auto;
 margin-right: auto;
@@ -10,3 +9,42 @@ border-style: groove;
 border-width: 10px;
 color #05034E
 }
+
+@media print {
+ header nav, footer {
+display: none;}
+
+img {
+max-width: 500px;
+}
+
+@page :left {
+margin: 0.5cm;
+}
+
+@page :right {
+margin: 0.8cm;
+}
+
+@page :first {
+  margin: 1cm 2cm;
+}
+body {
+font: 12pt Georgia, "Times New Roman", Times, serif;
+line-height: 1.3;
+}
+h1 {
+font-size: 24pt;
+}
+
+h2 {
+font-size: 14pt;
+margin-top: 25px;
+}
+
+aside h2 {
+font-size: 18pt;
+}
+
+}
+
